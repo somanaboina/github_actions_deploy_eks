@@ -1,3 +1,3 @@
-<h1 align="center">TIC-TAC-TOE-GAME</h1>
+<h1 align="center">GITHUB ACTIONS DEMO DEPLOY ON EKS</h1>
 
 
