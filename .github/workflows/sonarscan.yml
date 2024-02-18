@@ -20,6 +20,6 @@ jobs:
         uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
       - name: install npm dependency
         run: npm install
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
