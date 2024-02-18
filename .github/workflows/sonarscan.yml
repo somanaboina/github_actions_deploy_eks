@@ -9,7 +9,7 @@ on:
 jobs:
   build-analyze-scan:
     name: Build
-    runs-on: [Linux]
+    runs-on: [self-hosted]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -20,4 +20,6 @@ jobs:
         uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: install npm dependency
+        run: npm install
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
