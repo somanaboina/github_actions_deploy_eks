@@ -34,3 +34,6 @@ jobs:
           docker push somanaboina/tic-tac-toe:latest
         env:
           DOCKER_CLI_ACI: 1
+      - name: Image Scan
+        run: trivy image somanaboina/tic-tac-toe:latest > trivyimagescan_report.txt
+          
